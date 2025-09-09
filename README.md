@@ -26,6 +26,7 @@ CREATE TABLE profiles (
     created_at TIMESTAMP DEFAULT NOW()
 );
 ```
+
 To create measurements table :
 ```sql
 CREATE TABLE measurements (
@@ -41,3 +42,18 @@ CREATE TABLE measurements (
 );
 ```
 
+# 🔗 Relationships
+
+**floats → profiles**
+
+- One float (WMO ID) produces many profiles over its lifetime.
+- Relationship: floats.float_id (PK) ↔ profiles.float_id (FK)
+
+One-to-Many
+
+**profiles → measurements**
+
+- One profile file (e.g. R1900121_001.nc) contains many depth measurements (PRES/TEMP/PSAL rows).
+- Relationship: profiles.profile_id (PK) ↔ measurements.profile_id (FK)
+
+One-to-Many
