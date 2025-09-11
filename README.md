@@ -57,3 +57,23 @@ One-to-Many
 - Relationship: profiles.profile_id (PK) ↔ measurements.profile_id (FK)
 
 One-to-Many
+
+### How to initialise postgis
+```sql
+-- Connect to your database
+\c argo_db2
+
+-- Install PostGIS extension
+CREATE EXTENSION IF NOT EXISTS postgis;
+```
+### Create and seed sea areas table
+
+```bash
+shp2pgsql -I -s 4326 -G "D:\Downloads\World_Seas_IHO_v3\World_Seas_IHO_v3\World_Seas_IHO_v3.shp" world_seas | psql -U postgres -d argo_db2
+```
+
+
+### Citations
+
+To cite this product:
+Flanders Marine Institute (2018). IHO Sea Areas, version 3. Available online at https://www.marineregions.org/ https://doi.org/10.14284/323
