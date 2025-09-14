@@ -76,4 +76,5 @@ shp2pgsql -I -s 4326 -G "D:\Downloads\World_Seas_IHO_v3\World_Seas_IHO_v3\World_
 ### Citations
 
 To cite this product:
-Flanders Marine Institute (2018). IHO Sea Areas, version 3. Available online at https://www.marineregions.org/ https://doi.org/10.14284/323
+Flanders Marine Institute (2018). IHO Sea Areas, version 3. Available online at https://www.marineregions.org/ https://doi.org/10.14284
+

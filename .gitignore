@@ -1,2 +1,4 @@
 .env
+/dac
+/test
 __pycache__/
