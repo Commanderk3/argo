@@ -1,6 +1,6 @@
 import xarray as xr
 
-file_path = r"./test/R7902251_001.nc"
+file_path = r".dac/incois/1900121/1900121_meta.nc"
 ds = xr.open_dataset(file_path)
 
 print("=== GLOBAL ATTRIBUTES ===")
