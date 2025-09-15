@@ -1,6 +1,7 @@
 # config.py
 
 # Google API
+
 GOOGLE_API_KEY = ""
 
 # Embedding model
