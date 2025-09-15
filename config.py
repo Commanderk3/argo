@@ -1,7 +1,7 @@
 # config.py
 
 # Google API
-GOOGLE_API_KEY = "AIzaSyC2hxU9xw64g2NjcanAuv8Vk761_CswBGM"
+GOOGLE_API_KEY = ""
 
 # Embedding model
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
